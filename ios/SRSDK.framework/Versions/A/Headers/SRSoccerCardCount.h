@@ -10,8 +10,7 @@
 /**
  * Number of cards.
  */
-@interface SRSoccerCardCount : SRObject {
-}
+@interface SRSoccerCardCount : SRObject
 
 /**
  * Number of red cards.

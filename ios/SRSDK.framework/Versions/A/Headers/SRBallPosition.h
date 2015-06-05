@@ -10,8 +10,7 @@
 /**
  * Represents an incremental ball position.
  */
-@interface SRBallPosition : SRObject {
-}
+@interface SRBallPosition : SRObject
 
 /**
  * Team that was in possession of the ball at the time the coordinates were recorded.

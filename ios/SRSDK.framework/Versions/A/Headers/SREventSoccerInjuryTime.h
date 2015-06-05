@@ -10,8 +10,7 @@
 /**
  * This event occurs when additional/injury time is known.
  */
-@interface SREventSoccerInjuryTime :SREventSoccer {
-}
+@interface SREventSoccerInjuryTime :SREventSoccer
 
 /**
  * Minutes of injury time played in case of event. 

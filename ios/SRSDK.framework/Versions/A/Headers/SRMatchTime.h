@@ -7,6 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import "SRObject.h"
+@class SRMatchTime;
 
 /**
  * Parsed match time.
@@ -34,9 +35,15 @@
 @property (nonatomic, readonly) int injuryTime;
 
 /**
+ * Is this match counting time down 
+ */
+@property (nonatomic, readonly) BOOL isTimeCountdown;
+
+/**
  * Is this match live and running.
  */
 @property (nonatomic, readonly) BOOL isRunning;
 
+- (void)merge:(SRMatchTime*)matchTime;
 
 @end

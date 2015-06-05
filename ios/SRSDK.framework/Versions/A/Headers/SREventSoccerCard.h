@@ -11,8 +11,7 @@
 /**
  * Soccer card event.
  */
-@interface SREventSoccerCard : SREventSoccer {
-}
+@interface SREventSoccerCard : SREventSoccer
 
 /**
  * Type of the card received in case this event.

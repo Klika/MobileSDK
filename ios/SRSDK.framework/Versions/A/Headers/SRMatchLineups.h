@@ -50,8 +50,7 @@
  * ⎡
  * ⎣ - Goal
  */
-@interface SRMatchLineups : SRObject {
-}
+@interface SRMatchLineups : SRObject
 
 /**
  * Potencial lineup, retrieved from previous match.

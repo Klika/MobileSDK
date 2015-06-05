@@ -13,9 +13,7 @@
  * Represents one specific statistical information of a match.
  * All available types of statistical data are listed in the SRConstStatistics.h. All statistics values are greater or equal to zero.
  */
-@interface SRMatchStat : SRObject {
-    NSString *stringType;
-}
+@interface SRMatchStat : SRObject
 
 /**
  * Type of statistic data this object represents.

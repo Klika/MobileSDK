@@ -11,8 +11,7 @@
 /**
  * Soccer corner event.
  */
-@interface SREventSoccerCorner :SREventSoccer {
-}
+@interface SREventSoccerCorner :SREventSoccer
 
 /**
  * For which side corner is for.

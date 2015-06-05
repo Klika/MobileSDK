@@ -10,8 +10,7 @@
 /**
  * Event which holds ball coordinates.
  */
-@interface SREventSoccerBallCoordinate : SREventSoccer {
-}
+@interface SREventSoccerBallCoordinate : SREventSoccer
 
 /**
  * Array of ball position coordinates.

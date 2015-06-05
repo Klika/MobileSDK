@@ -19,18 +19,7 @@ extern const int GAME_POINT_WIN;          // game win constant
 /**
  * Represents tennis specific match.
  */
-@interface SRMatchTennis : SRMatch {
-    BOOL _coverageNeedAdvantage;    // do we need advantage to score point
-    
-    /*
-     _coverageTieBreakType (valid for final set only):
-     0: No tiebreak
-     1: Tiebreak
-     7: Super tiebreak 7
-     10: Super tiebreak 10
-     */
-    int _coverageTieBreakType;
-}
+@interface SRMatchTennis : SRMatch
 
 /**
  * Which team/player has a service. Compare it with SRMatch team1 to know if it's home team or with team2 for away team.

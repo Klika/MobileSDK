@@ -12,8 +12,7 @@
 /**
  * Soccer player substitution event.
  */
-@interface SREventSoccerSubstitution : SREventSoccer <SRPlayerAwareEvent> {
-}
+@interface SREventSoccerSubstitution : SREventSoccer <SRPlayerAwareEvent>
 
 /**
  * In case this event is a substitution, this would be the player that entered the match.

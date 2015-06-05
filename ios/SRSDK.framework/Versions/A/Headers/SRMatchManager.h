@@ -14,9 +14,10 @@
 
 static const int MAXIMUM_NO_LIVE_UPDATE_INTERVAL = 15;   // fallback value if there is no live update for long time
 
-@protocol SRMatchManagerDelegate
+@protocol SRMatchManagerDelegate <NSObject>
 
 - (void)matchDataIsLoaded;
+- (void)matchDataFailedToLoad;
 
 @end
 

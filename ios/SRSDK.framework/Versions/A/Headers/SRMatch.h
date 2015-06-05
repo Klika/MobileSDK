@@ -27,6 +27,7 @@
 #import "SRMatchLineups.h"
 #import "SRMatchRound.h"
 #import "SRPointFlowStructure.h"
+#import "SRPenaltyShootout.h"
 
 @class SRSport;
 @class SRCategory;
@@ -38,22 +39,11 @@
 /**
  * Represents single match for any sport.
  */
-@interface SRMatch : SRObject <SRNotificationSubscribable> {
-    int _coverageLineUp;
-    int _coverageFormations;
-    int _coverageLiveTable;
-    BOOL _coverageDeeperCoverage;
-    BOOL _coverageTacticalLineUp;
-    BOOL _coverageHasStats;
-    int _lastOddsUpdate;
-    BOOL _liveMatch;
-    SRMatchTime *_matchTimeData;
-    long _periodStartTime;
-    int _currentPeriodIndex;
-}
+@interface SRMatch : SRObject <SRNotificationSubscribable>
 
 @property (nonatomic,readonly) int matchId;
 
+@property (nonatomic,readonly) int livetableId;
 @property (nonatomic,readonly) int tournamentId;
 @property (nonatomic,readonly) int uniqueTournamentId;
 @property (nonatomic,readonly) SRTournament* tournament;
@@ -152,6 +142,16 @@
 @property (nonatomic,readonly) SRMatchScore* result;
 
 /**
+* Aggregated result for both teams.
+*/
+@property (nonatomic,readonly) SRMatchScore* aggregateResult;
+
+/**
+* Aggregated winning team of a match.
+*/
+@property (nonatomic,readonly) SRTeamBase* aggregateWinner;
+
+/**
  * Array of match periods.
  * @see SRMatchPeriod
  */
@@ -241,10 +241,20 @@
 @property (nonatomic,readonly) SRPointFlowStructure *pointFlowStructure;
 
 /**
+ * SRPenaltyShootout wrapper for SREventPenaltyShot objects. Is null before penalty shootout or shootout didn't occur, loaded with loadAdditionalData->SRMATCH_EVENTS.
+ */
+@property (nonatomic,readonly) SRPenaltyShootout *penaltyShootout;
+
+/**
  * Array of betting markets loaded with loadAdditionalData->SR_LOAD_ADDITIONAL_DATA_ODDS.
  * @see SRBetMarket
  */
 @property (nonatomic,readonly) NSArray *betMarkets;
+
+/**
+ * Provided, if loaded with loadAdditionalData->SR_LOAD_ADDITIONAL_DATA_LIVE_TABLE.
+ */
+@property (nonatomic,readonly) NSArray* liveTableItems;
 
 /**
  Generate URL to home team crest image.

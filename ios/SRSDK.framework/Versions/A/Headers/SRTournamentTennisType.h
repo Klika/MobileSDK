@@ -11,8 +11,7 @@
 /**
  * Represents the localized types of tennis tournaments.
  */
-@interface SRTournamentTennisType : SRObject {
-}
+@interface SRTournamentTennisType : SRObject 
 
 /**
  * Tennis tournament type.

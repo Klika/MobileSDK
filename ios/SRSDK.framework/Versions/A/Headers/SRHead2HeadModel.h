@@ -16,8 +16,7 @@
  * 
  * Head to head data can be obtained by calling <[SRMatchManager requestHead2Head]>.
  */
-@interface SRHead2HeadModel : SRObject {
-}
+@interface SRHead2HeadModel : SRObject
 
 /**
  * Home team's last match result statuses in an array of NSNumber from <SRConstTeamForm> (max 10 items).

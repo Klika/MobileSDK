@@ -11,8 +11,7 @@
 /**
  * Represents corner side.
  */
-@interface SRSoccerCornerSide : SRObject {
-}
+@interface SRSoccerCornerSide : SRObject
 
 /**
  * Corner side type.

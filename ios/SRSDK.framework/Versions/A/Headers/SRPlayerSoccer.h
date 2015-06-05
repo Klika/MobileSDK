@@ -14,13 +14,7 @@
 /**
  * Represents soccer specific player information.
  */
-@interface SRPlayerSoccer : SRPlayer {
-}
-
-/**
- * Information regarding a player's default playing position.
- */
-@property (nonatomic,readonly) SRPlayerPosition*  position;
+@interface SRPlayerSoccer : SRPlayer
 
 /**
  * Preferred player's playing foot. Localized string.

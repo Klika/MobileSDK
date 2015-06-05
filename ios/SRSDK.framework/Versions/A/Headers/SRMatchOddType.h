@@ -10,8 +10,7 @@
 /**
  * Match odd type.
  */
-@interface SRMatchOddType : SRObject {
-}
+@interface SRMatchOddType : SRObject
 
 /**
  * Unique id of odd type.

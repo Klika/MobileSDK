@@ -18,8 +18,7 @@
  * 
  * The data gets updated as soon a relevant event occurs during a match, meaning this table is also updated during a match.
  */
-@interface SRLiveTableItem : SRObject {
-}
+@interface SRLiveTableItem : SRObject 
 
 
 @property (nonatomic,readonly) int itemId;

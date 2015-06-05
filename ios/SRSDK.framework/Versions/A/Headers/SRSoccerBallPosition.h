@@ -12,8 +12,7 @@
 /**
  * Represents ball position in a soccer match. Meaningful only for live matches.
  */
-@interface SRSoccerBallPosition : SRObject {
-}
+@interface SRSoccerBallPosition : SRObject
 
 /**
  * X coordinate of the ball.

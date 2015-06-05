@@ -10,8 +10,7 @@
 /**
  * Represents the unique season for tournamets or player statistics.
  */
-@interface SRSeason : SRObject {
-}
+@interface SRSeason : SRObject 
 
 /**
  * Season unique id.

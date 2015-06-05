@@ -15,8 +15,7 @@
 /**
  * Player statistics for a team.
  */
-@interface SRPlayerTeamStatistics : SRObject {
-}
+@interface SRPlayerTeamStatistics : SRObject 
 
 /**
  * Team of a player, this statistic is provided.

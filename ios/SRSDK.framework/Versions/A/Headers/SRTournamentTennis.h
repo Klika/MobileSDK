@@ -15,9 +15,7 @@
 /**
  * Represents the tennis tournament additional data.
  */
-@interface SRTournamentTennis :SRTournament {
-}
-
+@interface SRTournamentTennis :SRTournament
 
 /**
  * Name of the city hosting the tournament.

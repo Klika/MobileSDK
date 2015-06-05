@@ -13,8 +13,7 @@
 /**
  * Team jersey details.
  */
-@interface SRTeamJerseys : SRObject {
-}
+@interface SRTeamJerseys : SRObject
 
 /**
  * Creates URL to generated jersey image.

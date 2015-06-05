@@ -6,15 +6,13 @@
 //
 
 #import "SRObject.h"
-#import "SRTeam.h"
+@class SRTeamBase;
 
 /**
  * Represents single block of a cup roster.
  */
 @interface SRCupBlock : SRObject
-{
-    NSDictionary *_allTeams;
-}
+
 
 @property (nonatomic,readonly) int cupId;
 
@@ -26,17 +24,17 @@
 /**
  * Home/first team playing.
  */
-@property (nonatomic,readonly) SRTeam *team1;
+@property (nonatomic,readonly) SRTeamBase *team1;
 
 /**
  * Away/second team playing.
  */
-@property (nonatomic,readonly) SRTeam *team2;
+@property (nonatomic,readonly) SRTeamBase *team2;
 
 /**
  * Winning team. Available only if finished. Advances to next block or wins the cup roster.
  */
-@property (nonatomic,readonly) SRTeam *winner;
+@property (nonatomic,readonly) SRTeamBase *winner;
 
 /**
  * Array of matches played in a block.

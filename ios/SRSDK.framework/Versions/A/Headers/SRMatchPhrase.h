@@ -16,9 +16,7 @@
 /**
  * Single match phrase (comment or funfact).
  */
-@interface SRMatchPhrase : SRObject {
-    SRMatch *_match;
-}
+@interface SRMatchPhrase : SRObject
 
 /**
  * Event comment is for. Can be nil.

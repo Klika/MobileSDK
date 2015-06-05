@@ -49,7 +49,7 @@
 	@param success Success callback handler
 	@param failure Failure callback handler
  */
-+(void)categoryListForSport:(int)sportId success:(SRCategoriesListCallback)success failure:(SRErrorCallback)failure;
++(void)categoryListForSport:(SRSport *)sport success:(SRCategoriesListCallback)success failure:(SRErrorCallback)failure;
 
 
 @end

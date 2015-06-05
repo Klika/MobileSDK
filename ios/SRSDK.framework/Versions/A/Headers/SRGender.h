@@ -11,8 +11,7 @@
 /**
  * Represents the localized gender of the tournament participants.
  */
-@interface SRGender : SRObject {
-}
+@interface SRGender : SRObject
 
 /**
  * Gender constant.

@@ -13,8 +13,7 @@
 /**
  * This is all sports score change event.
  */
-@interface SREventScoreChange : SREvent <SRPlayerAwareEvent> {
-}
+@interface SREventScoreChange : SREvent <SRPlayerAwareEvent>
 
 /**
  * Team which scored.
@@ -37,10 +36,10 @@
 @property (nonatomic,readonly) SRMatchScore *result;
 
 /**
- * Array of event flags that provide additional information regarding a shot or goal in soccer.
+ * Flags that provide additional information regarding a shot or goal in soccer.
  * @see SRConstEventFlag.h
  */
-@property (nonatomic,readonly) NSArray* flags;
+@property (nonatomic,readonly) SRConstEventFlag flags;
 
 /**
  * Array of player who assisted.

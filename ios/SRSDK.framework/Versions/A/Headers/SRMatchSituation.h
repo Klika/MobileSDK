@@ -12,8 +12,7 @@
 /**
  * Represents the team's situation - whether the team is in an attacking or defending position.
  */
-@interface SRMatchSituation : SRObject {
-}
+@interface SRMatchSituation : SRObject
 
 /**
  * The name of the team. Team can also be `nil`. That would mean that ball possesion is currently around the center of the pitch and the team cannot be determand.

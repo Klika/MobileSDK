@@ -16,8 +16,7 @@
 /**
  * Player statistics for a team in a season.
  */
-@interface SRPlayerTeamSeason : SRObject {
-}
+@interface SRPlayerTeamSeason : SRObject
 
 /**
  * Season.

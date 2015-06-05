@@ -17,13 +17,6 @@
  This notification object is sent by the <SRDataManager> through NSNotificationCenter using the notification name <a href="../docs/SRConstSRNotifications.html#SRDataManagerPartialUpdateNotification">SRDataManagerPartialUpdateNotification</a>
  */
 @interface SRMatchUpdatedNotification : NSObject
-{
-    NSMutableArray* _updatedMatchList;
-    NSMutableArray* _eventsAdd;
-    NSMutableArray* _eventsRemove;
-    NSMutableArray* _eventsUpdate;
-    BOOL _periodEvent;
-}
 
 /*!
  Array of <SRMatch> matches that were updated during the process of polling.

@@ -9,11 +9,7 @@
 #import "SRObject.h"
 #import "SRTournament.h"
 
-@interface SRTournamentStructure : SRObject {
-    NSMutableDictionary *_categories;
-    NSMutableDictionary *_uniqueTournaments;
-    NSMutableDictionary *_tournaments;
-}
+@interface SRTournamentStructure : SRObject
 
 /**
  * Array of sports.
@@ -29,17 +25,17 @@
 /**
  * List all unique tournaments for specified category.
  */
-- (NSArray *)listUniqueTournaments:(SRCategory *)category;
+- (NSArray *)listUniqueTournaments:(SRCategory *)category onlyActive:(BOOL)onlyActive;
 
 /**
  * List all tournaments for specified category.
  */
-- (NSArray *)listTournaments:(SRCategory *)category;
+- (NSArray *)listTournaments:(SRCategory *)category onlyActive:(BOOL)onlyActive;
 
 /**
  * List all tournaments for specified category.
  */
-- (NSArray *)listTournaments:(SRCategory *)category forUniqueTournament:(SRTournament *)tournament;
+- (NSArray *)listTournaments:(SRCategory *)category forUniqueTournament:(SRTournament *)tournament onlyActive:(BOOL)onlyActive;
 
 /**
  * Get tournament for specified ID.

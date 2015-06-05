@@ -24,6 +24,10 @@
  */
 @property (nonatomic, readonly) int fullFeedInterval;
 /*!
+ Time in seconds which the app needs to spend in background so that the <SRDataManager> data manager will request a new complete matches list after entering foreground.
+ */
+@property (nonatomic, readonly) int fullFeedAfterAppBackgroundTime;
+/*!
  The mask for live updating matches data (to set which data will be live updates)
  */
 @property (nonatomic, readonly) int liveUpdateMask;

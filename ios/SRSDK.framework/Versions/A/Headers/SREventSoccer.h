@@ -12,8 +12,7 @@
 /**
  * Soccer specific event.
  */
-@interface SREventSoccer : SREvent <SRPlayerAwareEvent> {
-}
+@interface SREventSoccer : SREvent <SRPlayerAwareEvent>
 
 /**
  * Time of the event in injury time of the match.

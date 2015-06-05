@@ -7,12 +7,12 @@
 #import <Foundation/Foundation.h>
 #import "SRTeamBase.h"
 #import "SRConstGender.h"
+#import "SRConstTennisTournamentType.h"
 
 /**
  * Represents the tennis specific team additional data.
  */
-@interface SRTeamTennis : SRTeamBase {
-}
+@interface SRTeamTennis : SRTeamBase
 
 /**
  * Array of child teams if any. For example, this is an array of teams that represent the doubles.

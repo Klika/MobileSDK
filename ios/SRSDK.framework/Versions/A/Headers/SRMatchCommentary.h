@@ -10,8 +10,7 @@
 /**
  * Match commentry is provided when calling loadAdditionalData->SR_LOAD_ADDITIONAL_DATA_COMMENTS.
  */
-@interface SRMatchCommentary : NSObject {
-}
+@interface SRMatchCommentary : NSObject
 
 /**
  * Array of match commentary lines.

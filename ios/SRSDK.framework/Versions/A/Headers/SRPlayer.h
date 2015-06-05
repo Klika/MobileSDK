@@ -8,12 +8,12 @@
 #import "SRCountry.h"
 #import "SRObject.h"
 #import "SRConstPlayerTypes.h"
+@class SRPlayerPosition;
 
 /**
  * Represents the basic player information.
  */
-@interface SRPlayer : SRObject <NSCopying> {
-}
+@interface SRPlayer : SRObject <NSCopying>
 
 /**
  * The unique id if the player
@@ -25,6 +25,11 @@
  * @see SRConstPlayerTypes.h
  */
 @property (nonatomic, readonly) SRConstPlayerTypes type;
+
+/**
+ * Information regarding a player's default playing position.
+ */
+@property (nonatomic,readonly) SRPlayerPosition*  position;
 
 /**
  * Nationality of a player.

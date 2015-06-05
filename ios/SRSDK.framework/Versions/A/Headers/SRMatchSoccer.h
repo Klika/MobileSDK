@@ -15,13 +15,7 @@
 /**
  * Representing soccer specific match details.
  */
-@interface SRMatchSoccer : SRMatch {
-}
-
-/**
- * Aggregated result for both teams.
- */
-@property (nonatomic,readonly) SRMatchScore*  aggregate;
+@interface SRMatchSoccer : SRMatch
 
 /**
  * Match pitch conditions.

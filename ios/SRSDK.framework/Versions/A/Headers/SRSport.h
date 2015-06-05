@@ -12,8 +12,7 @@
 /**
  * Represents sport.
  */
-@interface SRSport : SRObject {
-}
+@interface SRSport : SRObject
 
 /**
  * Sport type.
@@ -39,7 +38,15 @@
  * @returns YES if sport is inidividual
  * @see SRConstSports.h for available sports
  */
-+ (BOOL)isIndividual:(SRConstSports)sportId;
++ (BOOL)isIndividualSport:(SRConstSports)sportId;
+
+/**
+ * Is this sport penalty/penalty box aware sport.
+ * @param sportId Type of a sport
+ * @returns YES if sport is suspensible
+ * @see SRConstSports.h for available sports
+ */
++ (BOOL)isSuspensibleSport:(SRConstSports)sportId;
 
 @end
 

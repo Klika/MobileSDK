@@ -11,6 +11,7 @@
 #import "SRMatchScore.h"
 #import "SRObject.h"
 #import "SRConstEventTime.h"
+@class SRMatch;
 
 #define MATCH_TIME_UNKNOWN ((int) -100)
 
@@ -35,6 +36,11 @@
  * Event for match with id.
  */
 @property (nonatomic,readonly) int matchId;
+
+/**
+ * Match for event.
+ */
+@property (nonatomic,readonly) SRMatch* match;
 
 /**
  * Event type.
@@ -84,12 +90,12 @@
 @property (nonatomic,readonly) SRConstEventTime timeType;
 
 /**
- * Event position on the playing ground vertical axis in percents from 0 to 100.
+ * Event position on the playing ground horizontal axis in percents from 0 to 100.
  */
 @property (nonatomic,readonly) int eventX;
 
 /**
- * Event position on the playing ground horizontal axis in percents from 0 to 100.
+ * Event position on the playing ground vertical axis in percents from 0 to 100.
  */
 @property (nonatomic,readonly) int eventY;
 

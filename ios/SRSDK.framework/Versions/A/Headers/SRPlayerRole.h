@@ -16,8 +16,7 @@
  * One player can have several roles (e.g. "active contract", "on loan", "international", "manager"), where some are active and some inactive.
  * In soccer for example, one player can be part of an international team, even though he has an active contract with his own team at the same time.
  */
-@interface SRPlayerRole : SRObject {
-}
+@interface SRPlayerRole : SRObject
 
 /**
  * The player's team when occupying this role.

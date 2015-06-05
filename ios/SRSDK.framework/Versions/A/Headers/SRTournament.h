@@ -16,6 +16,8 @@
 @class SRTeamBase;
 @class SRFixtureStructure;
 
+typedef void (^SRTournamentCallback)(SRObject *tournament,  SRObject *uniqueTournament);
+
 /**
  * Represents the base data of a tournament.
  * Model hierarchy: SRSport -> SRCategory -> SRTournament -> SRMatch
@@ -74,6 +76,16 @@
  * Localized tournament name.
  */
 @property (nonatomic,readonly) NSString* name;
+
+/**
+* Group name.
+*/
+@property (nonatomic,readonly) NSString* groupName;
+
+/**
+* Season type
+*/
+@property (nonatomic,readonly) int seasonType;
 
 /**
  * Tournament abbreviation.
@@ -146,7 +158,7 @@
 /**
  * Fetch list of all available tournaments for category.
  */
-+(void)tournamentListForCategoryId:(int)categoryId success:(SRTournamentsListCallback)success failure:(SRErrorCallback)failure;
++(void)tournamentListForCategory:(SRCategory *)category success:(SRTournamentsListCallback)success failure:(SRErrorCallback)failure;
 
 /**
  * Fetch list of all available categories and sports.
@@ -156,7 +168,7 @@
 /**
  * Load tournament object by tournament id.
  */
-+ (void)findById:(int)tournamentId success:(SRObjectCallback)success failure:(SRErrorCallback)failure;
++ (void)findById:(int)tournamentId success:(SRTournamentCallback)success failure:(SRErrorCallback)failure;
 
 
 @end

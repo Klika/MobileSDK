@@ -5,20 +5,19 @@
 //  Copyright (c) 2014 Sportradar AG All rights reserved.
 //
 #import <Foundation/Foundation.h>
-#import "SRConstPlayerDefaultPosition.h"
+#import "SRConstPlayerPosition.h"
 #import "SRObject.h"
 	
 /**
  * Represents player's playing position.
  */
-@interface SRPlayerPosition : SRObject {
-}
+@interface SRPlayerPosition : SRObject
 
 /**
  * Player's default playing position.
- * @see SRConstPlayerDefaultPosition.h for available positions
+ * @see SRConstPlayerPosition.h for available positions
  */
-@property (nonatomic,readonly) SRConstPlayerDefaultPosition defaultPosition;
+@property (nonatomic,readonly) SRConstPlayerPosition defaultPosition;
 
 /**
  * Localized name of the player's default position.

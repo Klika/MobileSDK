@@ -11,8 +11,7 @@
 /**
  * Score of one game. This is tennis specific.
  */
-@interface SRGameScore : SRObject {
-}
+@interface SRGameScore : SRObject
 
 /**
  * Score of home/first player/team.

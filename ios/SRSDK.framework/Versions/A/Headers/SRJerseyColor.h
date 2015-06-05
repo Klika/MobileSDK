@@ -10,8 +10,7 @@
 /**
  * Represents jersey color components for each jersey.
  */
-@interface SRJerseyColor : SRObject {
-}
+@interface SRJerseyColor : SRObject
 
 /**
  * Base color of this jersey.

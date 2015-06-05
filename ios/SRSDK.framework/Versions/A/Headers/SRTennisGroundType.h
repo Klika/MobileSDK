@@ -11,8 +11,7 @@
 /**
  * Represents the localized tennis tournament ground type.
  */
-@interface SRTennisGroundType : SRObject {
-}
+@interface SRTennisGroundType : SRObject 
 
 /**
  * Type of ground type.

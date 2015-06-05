@@ -9,9 +9,7 @@
 #import "SRConstBetSettlingStatus.h"
 #import "SRMatch.h"
 
-@interface SRBetTicketLine : SRObject {
-    int _matchId;
-}
+@interface SRBetTicketLine : SRObject
 
 /**
  * Market id.

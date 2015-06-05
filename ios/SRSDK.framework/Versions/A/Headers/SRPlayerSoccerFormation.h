@@ -6,8 +6,8 @@
 //
 #import <Foundation/Foundation.h>
 #import "SRPlayerSoccer.h"
-#import "SRConstPlayerCurrentPosition.h"
 #import "SRObject.h"
+#import "SRConstPlayerPosition.h"
 
 @class SRPlayerSoccer;
 	
@@ -16,8 +16,7 @@
  * 
  * In soccer for instance, this object contains data for building a lineup.
  */
-@interface SRPlayerSoccerFormation : SRObject {
-}
+@interface SRPlayerSoccerFormation : SRObject
 
 /**
  * Soccer specific player.
@@ -38,9 +37,9 @@
 
 /**
  * Player's playing position in current match formation.
- * @see SRConstPlayerCurrentPosition.h
+ * @see SRConstPlayerPosition.h
  */
-@property (nonatomic,readonly) SRConstPlayerCurrentPosition currentPosition;
+@property (nonatomic,readonly) SRConstPlayerPosition currentPosition;
 
 /**
  * Localized name of the player's position.

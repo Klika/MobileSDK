@@ -12,8 +12,7 @@
  * Event containing match situation. 
  * @see SRMatchSituation
  */
-@interface SREventSoccerMatchSituation : SREventSoccer {
-}
+@interface SREventSoccerMatchSituation : SREventSoccer
 
 /**
  * Situation details.

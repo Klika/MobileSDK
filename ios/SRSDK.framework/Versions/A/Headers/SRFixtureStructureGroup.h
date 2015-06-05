@@ -32,5 +32,6 @@
  */
 @property (nonatomic, readonly) SRTournament *tournament;
 
+- (NSComparisonResult)compare:(SRFixtureStructureGroup *)otherObject;
 
 @end

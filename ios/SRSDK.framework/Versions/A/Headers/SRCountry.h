@@ -10,8 +10,7 @@
 /**
  * Represents a country.
  */
-@interface SRCountry : SRObject {
-}
+@interface SRCountry : SRObject
 
 /**
  * Unique country id.

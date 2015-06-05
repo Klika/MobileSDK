@@ -16,7 +16,7 @@
 /**
  * Played match.
  */
-@property (nonatomic,readonly) SRMatchTennis* match;
+@property (nonatomic,readonly) SRMatchTennis* tennisMatch;
 
 /**
  * Team which scored.

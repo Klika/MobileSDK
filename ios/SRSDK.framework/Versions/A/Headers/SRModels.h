@@ -20,6 +20,7 @@
 #import "SREventScoreChange.h"
 #import "SREventSoccerInjuryTime.h"
 #import "SREventSoccerSubstitution.h"
+#import "SREventPenaltyShot.h"
 #import "SRLiveTableItem.h"
 #import "SRMatch.h"
 #import "SRMatchCommentary.h"

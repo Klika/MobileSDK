@@ -12,8 +12,7 @@
 /**
  * Represents the stadium where a match is held.
  */
-@interface SRStadium : SRObject {
-}
+@interface SRStadium : SRObject
 
 /**
  * Unique stadium Id.

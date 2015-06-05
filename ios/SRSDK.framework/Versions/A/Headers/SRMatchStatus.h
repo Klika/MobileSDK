@@ -11,8 +11,7 @@
 /**
  * Representing match status.
  */
-@interface SRMatchStatus : SRObject {
-}
+@interface SRMatchStatus : SRObject
 
 /**
  * Match status type.

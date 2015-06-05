@@ -11,9 +11,7 @@
  * Represents cup roster round. Example of round: 'Semi finals'
  */
 @interface SRCupRound : SRObject
-{
-    NSDictionary *_allTeams;
-}
+
 
 @property (nonatomic,readonly) int cupRoundId;
 
@@ -26,6 +24,16 @@
  * Short name of a cup round.
  */
 @property (nonatomic,readonly) NSString *shortName;
+
+/**
+ * Start date of the round.
+ */
+@property (nonatomic,readonly) NSDate *startDate;
+
+/**
+ * End date of the round.
+ */
+@property (nonatomic,readonly) NSDate *endDate;
 
 /**
  * Array of blocks in a round.

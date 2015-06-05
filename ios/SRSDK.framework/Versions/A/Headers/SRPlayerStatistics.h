@@ -13,8 +13,7 @@
 /**
  * Statistics details for player.
  */
-@interface SRPlayerStatistics : SRObject {
-}
+@interface SRPlayerStatistics : SRObject
 
 @property (nonatomic,readonly) SRConstSports sportId;
 

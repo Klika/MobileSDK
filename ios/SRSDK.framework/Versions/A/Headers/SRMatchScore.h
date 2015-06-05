@@ -11,8 +11,7 @@
 /**
  * Representing the score of the match.
  */
-@interface SRMatchScore : SRObject {
-}
+@interface SRMatchScore : SRObject
 
 /**
  * Match period this score has been updated in.

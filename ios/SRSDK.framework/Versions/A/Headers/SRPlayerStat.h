@@ -10,8 +10,7 @@
 /**
  * Represents individual player's statistics throughout his career.
  */
-@interface SRPlayerStat : SRObject {
-}
+@interface SRPlayerStat : SRObject
 
 /**
  * Number of goals scored.

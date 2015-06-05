@@ -49,6 +49,11 @@
 @property (nonatomic,readonly) SRCountry*  country;
 
 /**
+ * Is this a country team.
+ */
+@property (nonatomic,readonly) BOOL isCountry;
+
+/**
  * Array of last matches played by this team. Loaded with loadAddtionalData->SR_LOAD_ADDITIONAL_DATA_TEAM_LAST_MATCHES.
  * @see SRMatch
  */

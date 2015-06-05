@@ -7,8 +7,7 @@
 #import <Foundation/Foundation.h>
 #import "SRObject.h"
 
-@interface SRMatchOddOutcome : SRObject {
-}
+@interface SRMatchOddOutcome : SRObject
 
 @property (nonatomic,readonly) int id;
 

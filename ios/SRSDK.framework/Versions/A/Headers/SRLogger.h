@@ -8,15 +8,11 @@
 #import <Foundation/Foundation.h>
 #import "SRConstLogging.h"
 
-@interface SRLogger : NSObject {
-    int _logLevel;
-}
+@interface SRLogger : NSObject
 
 @property (nonatomic, strong) NSArray* logLevelTranslations;
 
 + (SRLogger*) sharedInstance;
-
-
 
 - (void)setLogLevel: (int)level;
 - (void)logMessage: (NSString*)message forLevel:(int)level;
