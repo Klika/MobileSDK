@@ -42,6 +42,8 @@
  */
 @property (nonatomic,readonly) NSString* split;
 
+@property (nonatomic,readonly) BOOL real;
+
 
 @end
 

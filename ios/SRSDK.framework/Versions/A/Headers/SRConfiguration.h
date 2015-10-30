@@ -39,5 +39,19 @@
  */
 @property (nonatomic, strong) NSString *bettingApiKey;
 
+/**
+* Bookmaker name for pre match odds.
+*/
+@property (nonatomic, strong) NSString *preMatchOddsBookmaker;
+
+/**
+* Player images enabled.
+*/
+@property (nonatomic) BOOL playerImagesEnabled;
+
+/**
+ * Part of internal API.
+ */
+@property (nonatomic, strong) NSString * overrideServiceId;
 
 @end

@@ -24,6 +24,11 @@
 @property (nonatomic, readonly) int periodLength;
 
 /**
+ * This is sport specific length in seconds and is loaded with loadAdditionalData->SR_LOAD_ADDITIONAL_DATA_STATISTICS on match object.
+ */
+@property (nonatomic, readonly) int actualPlayed;
+
+/**
  * Type of a period.
  * @see SRConstMatchStatuses.h
  */

@@ -2,8 +2,7 @@
 //  SRTeamBase.h
 //  SRSDK
 //
-//  Created by Jure Zemljic on 23/07/14.
-//  Copyright (c) 2014 Klika d.o.o. All rights reserved.
+//  Copyright (c) 2014 Sportradar AG All rights reserved.
 //
 
 #import "SRObject.h"
@@ -30,6 +29,11 @@
  * Localized name of a team.
  */
 @property (nonatomic,readonly) NSString* name;
+
+/**
+ * Localized long name of a team. This is proveded in additional data loading.
+ */
+@property (nonatomic,readonly) NSString* longName;
 
 /**
  * Team abbreviation.
@@ -66,11 +70,17 @@
 @property (nonatomic,readonly) NSArray *nextMatches;
 
 /**
- Generate URL to team image.
+ Generate URL to team crest image.
  @param aLarge Is this large sized image, otherwise it's medium sized
- @returns URL to jersey PNG image
+ @returns URL to crest PNG image
  */
 -(NSString*)teamCrestURL:(BOOL)aLarge;
+
+/**
+ * Generate URL to team jersey image.
+ * @returns URL to PNG image
+ */
+-(NSString*)teamJerseyURL;
 
 /**
  * National teams request for a country and sport.

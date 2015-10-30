@@ -26,9 +26,15 @@
 @property (nonatomic,readonly) SRPlayer *scorer;
 
 /**
- * How many points where there in the score. In most cases value is 1, except for example in basketball match.
+ * How many points where there in the score. In most cases value is 1, except for example in basketball, rugby match.
  */
 @property (nonatomic,readonly) int points;
+
+/**
+ * Points can be scored in several ways. Used in rugby.
+ * @see SRConstEventTypes
+ */
+@property (nonatomic,readonly) SRConstEventTypes pointType;
 
 /**
  * What's the current score of a match.

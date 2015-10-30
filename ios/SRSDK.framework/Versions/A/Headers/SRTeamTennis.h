@@ -26,6 +26,16 @@
 @property (nonatomic,readonly) int ranking;
 
 /**
+ * Singles ranking position.
+ */
+@property (nonatomic,readonly) int singlesRank;
+
+/**
+ * Doubles ranking position.
+ */
+@property (nonatomic,readonly) int doublesRank;
+
+/**
  * Total points, players received in played tournaments.
  */
 @property (nonatomic,readonly) int points;
@@ -34,6 +44,11 @@
  * Year, when player turned pro.
  */
 @property (nonatomic,readonly) NSString *turnedPro;
+
+/**
+ * At what age player started playing tennis.
+ */
+@property (nonatomic,readonly) int ageStartedPlaying;
 
 /**
  * Players preferred hand, left or right.
@@ -54,6 +69,21 @@
  * Weight of a player.
  */
 @property (nonatomic,readonly) int weight;
+
+/**
+ * Name of the player's coach.
+ */
+@property (nonatomic,readonly) NSString *coachName;
+
+/**
+ * Players favourite surface.
+ */
+@property (nonatomic,readonly) NSString *favouriteSurface;
+
+/**
+ * Player image URL.
+ */
+@property (nonatomic,readonly) NSString *playerImage;
 
 /**
  * Is this team instance really a tennis doubles team.

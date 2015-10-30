@@ -2,7 +2,6 @@
 //  SREventPeriodStarted.h
 //  SRSDK
 //
-//  Created by Jure Zemljic on 07/04/15.
 //  Copyright (c) 2015 Sportradar AG. All rights reserved.
 //
 
@@ -14,6 +13,11 @@
  * Starting period.
  */
 @property (nonatomic,readonly) int period;
+
+/**
+* Is this period start event a break
+*/
+@property (nonatomic,readonly) BOOL isBreak;
 
 
 @end

@@ -8,6 +8,7 @@
 #import "SRConstGameServicePosition.h"
 #import "SRGameScore.h"
 #import "SRMatch.h"
+#import "SRMatchService.h"
 #import "SRConstGameOpportunity.h"
 #import "SRTeamTennis.h"
 
@@ -19,18 +20,7 @@ extern const int GAME_POINT_WIN;          // game win constant
 /**
  * Represents tennis specific match.
  */
-@interface SRMatchTennis : SRMatch
-
-/**
- * Which team/player has a service. Compare it with SRMatch team1 to know if it's home team or with team2 for away team.
- */
-@property (nonatomic,readonly) SRTeamTennis *serviceTeam;
-
-/**
- * Where does the serving player serve, left or right.
- * @see SRConstGameServicePosition.h
- */
-@property (nonatomic,readonly) SRConstGameServicePosition servicePosition;
+@interface SRMatchTennis : SRMatchService
 
 /**
  * Current game score.
@@ -66,6 +56,11 @@ extern const int GAME_POINT_WIN;          // game win constant
 @property (nonatomic,readonly) int breakTimeDuration;
 
 /**
+ * Court information. Provided only for some matches.
+ */
+@property (nonatomic,readonly) NSString *court;
+
+/**
  * Is match in break time. When break time is expired (duration), NO is returned.
  */
 -(BOOL)isBreakTimeInProgress;
@@ -86,6 +81,17 @@ extern const int GAME_POINT_WIN;          // game win constant
  * @return
  */
 - (BOOL)isSuperTieBreakPeriod:(int)periodIndex;
+
+/**
+ * Returns true if match/tournament supports tie breaks.
+ */
+- (BOOL)supportsTieBreaks;
+
+/**
+ * If set was finished with tie break we can get tie break score with this method. Available when match events are loaded with loadAdditionalData->SR_LOAD_ADDITIONAL_DATA_EVENTS.
+ * @return Tie break score for set, or nil if set wasn't finished with tie break.
+ */
+- (SRGameScore *)getTieBreakScore:(int)periodIndex;
 
 
 @end

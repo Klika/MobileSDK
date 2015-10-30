@@ -6,6 +6,7 @@
 //
 #import <Foundation/Foundation.h>
 #import "SRObject.h"
+#import "SRConstPlayerStat.h"
 	
 /**
  * Represents individual player's statistics throughout his career.
@@ -13,59 +14,17 @@
 @interface SRPlayerStat : SRObject
 
 /**
- * Number of goals scored.
+ * Get specific stat.
+ * @param stat Stat constant
+ * @return Stat value or 0 if there is no stat
  */
-@property (nonatomic,readonly) int goals;
+- (NSUInteger)getStat:(SRConstPlayerStat)stat;
 
 /**
- * Number of red cards received that followed two yellow cards.
+ * Get all available stats. This is based on sport, so there are different stats constants from sport to sport.
+ * @return NSDictionary of all available stats for sport, keys are SRConstPlayerStat, value is numeric value
  */
-@property (nonatomic,readonly) int yellowRedCards;
-
-/**
- * Number of yellow cards received.
- */
-@property (nonatomic,readonly) int yellowCards;
-
-/**
- * Number of red cards received.
- */
-@property (nonatomic,readonly) int redCards;
-
-/**
- * Number of matches played.
- */
-@property (nonatomic,readonly) int numberOfMatches;
-
-/**
- * Number of assists given.
- */
-@property (nonatomic,readonly) int assists;
-
-/**
- * Number of points this player gained his team through his <goals> goals.
- */
-@property (nonatomic,readonly) int goalPoints;
-
-/**
- * Number of penalties this player has taken.
- */
-@property (nonatomic,readonly) int penalties;
-
-/**
- * Sum of all the time played in the matches in minutes.
- */
-@property (nonatomic,readonly) int minutesPlayed;
-
-/**
- * Number of times this player was substituted into the match.
- */
-@property (nonatomic,readonly) int substitutionsIn;
-
-/**
- * Number of times this player was substituted from the match by another player.
- */
-@property (nonatomic,readonly) int substitutionsOut;
+- (NSDictionary *)getAllStats;
 
 
 @end

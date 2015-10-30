@@ -20,7 +20,7 @@
 /**
  * Market ID.
  */
-@property (nonatomic, readonly) int marketId;
+@property (nonatomic, readonly) NSString *marketId;
 
 /**
  * Match id of this market.

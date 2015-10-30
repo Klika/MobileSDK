@@ -14,7 +14,7 @@
 /**
  * Market id.
  */
-@property (nonatomic, readonly) int marketId;
+@property (nonatomic, readonly) NSString* marketId;
 
 /**
  * Name of a market.

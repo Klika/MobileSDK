@@ -133,22 +133,10 @@ typedef void (^SRTournamentCallback)(SRObject *tournament,  SRObject *uniqueTour
 @property (nonatomic,readonly) NSArray* cupRosters;
 
 /**
- * Array of top goals stats for current season.
+ * Array of top stats for current season. Keys are tournament load attributes, values are array of SRPlayerStatistics.
  * @see SRPlayerStatistics
  */
-@property (nonatomic,readonly) NSArray* topGoals;
-
-/**
- * Array of top assists stats for current season.
- * @see SRPlayerStatistics
- */
-@property (nonatomic,readonly) NSArray* topAssists;
-
-/**
- * Array of top cards stats for current season.
- * @see SRPlayerStatistics
- */
-@property (nonatomic,readonly) NSArray* topCards;
+@property (nonatomic,readonly) NSDictionary* topStats;
 
 /**
  * Does this tournament have season information.

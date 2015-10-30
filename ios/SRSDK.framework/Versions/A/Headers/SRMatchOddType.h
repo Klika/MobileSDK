@@ -6,6 +6,7 @@
 //
 #import <Foundation/Foundation.h>
 #import "SRObject.h"
+#import "SRConstMatchOddType.h"
 
 /**
  * Match odd type.
@@ -14,8 +15,9 @@
 
 /**
  * Unique id of odd type.
+ * See SRConstMatchOddType
  */
-@property (nonatomic,readonly) int id;
+@property (nonatomic,readonly) SRConstMatchOddType id;
 
 /**
  * Odd type name. For example "Over/Under".

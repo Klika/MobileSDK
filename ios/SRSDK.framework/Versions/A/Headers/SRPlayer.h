@@ -8,6 +8,7 @@
 #import "SRCountry.h"
 #import "SRObject.h"
 #import "SRConstPlayerTypes.h"
+@class SRPlayerStatistics;
 @class SRPlayerPosition;
 
 /**
@@ -68,6 +69,21 @@
  */
 @property (nonatomic,readonly) int shirtNumber;
 
+/**
+ * Players roles in teams for which player has played.
+ */
+@property (nonatomic,readonly) NSArray*  playerRoles;
+
+/**
+ * Player statistics.
+ */
+@property (nonatomic,readonly) SRPlayerStatistics*  playerStatistics;
+
+/**
+Generate URL to player image. Returns nil if images are not enabled or clientId is not set
+@returns URL to player PNG image
+*/
+- (NSString*)playerImageURL;
 
 @end
 

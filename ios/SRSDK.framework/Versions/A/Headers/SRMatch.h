@@ -241,7 +241,7 @@
 @property (nonatomic,readonly) SRPointFlowStructure *pointFlowStructure;
 
 /**
- * SRPenaltyShootout wrapper for SREventPenaltyShot objects. Is null before penalty shootout or shootout didn't occur, loaded with loadAdditionalData->SRMATCH_EVENTS.
+ * SRPenaltyShootout wrapper for SREventPenaltyShot objects. Is nil before penalty shootout or shootout didn't occur, loaded with loadAdditionalData->SRMATCH_EVENTS.
  */
 @property (nonatomic,readonly) SRPenaltyShootout *penaltyShootout;
 
@@ -250,6 +250,12 @@
  * @see SRBetMarket
  */
 @property (nonatomic,readonly) NSArray *betMarkets;
+
+/**
+* Array of betting odds
+* @see SRMatchOdd
+*/
+@property (nonatomic, readonly) NSDictionary *preMatchOdds;
 
 /**
  * Provided, if loaded with loadAdditionalData->SR_LOAD_ADDITIONAL_DATA_LIVE_TABLE.

@@ -12,18 +12,22 @@
 /**
  * Match odds provided by bookmaker.
  */
-@interface SRMatchOdd : SRObject {
-}
+@interface SRMatchOdd : SRObject
+
+/**
+* Client match Id.
+*/
+@property (nonatomic,readonly) int clientMatchId;
 
 /**
  * Bookmaker unique id.
  */
-@property (nonatomic,readonly) int bookmakerid;
+@property (nonatomic,readonly) int bookmakerId;
 
 /**
  * Bookmaker bet id. Optional.
  */
-@property (nonatomic,readonly) int bookmakerbetid;
+@property (nonatomic,readonly) int bookmakerbetId;
 
 /**
  * Odd type details. Long ans short text.
@@ -34,12 +38,17 @@
  * Array of match odd outcomes.
  * @see SRMatchOddOutcome
  */
-@property (nonatomic,readonly) NSArray*  odds;
+@property (nonatomic,readonly) NSArray* odds;
 
 /**
  * Is this a live bet.
  */
 @property (nonatomic,readonly) BOOL livebet;
+
+/**
+* Is match odds.
+*/
+@property (nonatomic,readonly) BOOL isMatchOdds;
 
 /**
  * Extra odd details. Optional.

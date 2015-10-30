@@ -2,7 +2,7 @@
 //  SRConstGameServicePosition.h
 //  SRSDK
 //
-//  Copyright (c) 2014 Klika d.o.o. All rights reserved.
+//  Copyright (c) 2014 Sportradar AG All rights reserved.
 //
 
 typedef enum _SRConstGameServicePosition {

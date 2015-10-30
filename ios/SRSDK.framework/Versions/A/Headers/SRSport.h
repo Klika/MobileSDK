@@ -48,5 +48,13 @@
  */
 + (BOOL)isSuspensibleSport:(SRConstSports)sportId;
 
+/**
+* Is service sport.
+* @param sportId Type of a sport
+* @returns YES if sport is service aware
+* @see SRConstSports.h for available sports
+*/
++ (BOOL)isServiceSport:(SRConstSports)sportId;
+
 @end
 

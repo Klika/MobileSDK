@@ -11,10 +11,17 @@
  An object responsible for offering the SDK with all relevant client side information that control the behavior and parameters of the server requests.
  */
 @interface SRConfigManager : NSObject
+
+/**
+* Client id name.
+*/
+@property (nonatomic, readonly) NSString *clientId;
+
 /**
  Sport Radar SDK server URL address.
  */
 @property (nonatomic, readonly) NSString *feedUrl;
+
 /**
  Service id, returned from backend server.
  */
@@ -37,6 +44,11 @@
  When first accessing this variable, the configuration from config.plist is parsed. If the configuration is incomplete, errors might occur at this point.
  */
 + (SRConfigManager *)sharedInstance;
+
+/**
+* SRConfiguration
+*/
+@property (nonatomic, readonly) SRConfiguration *configuration;
 
 + (void)initWithConfiguration:(SRConfiguration *)configuration andClientId:(NSString *)clientId andServiceId:(NSString *)serviceId;
 

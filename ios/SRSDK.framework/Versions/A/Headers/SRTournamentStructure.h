@@ -38,6 +38,11 @@
 - (NSArray *)listTournaments:(SRCategory *)category forUniqueTournament:(SRTournament *)tournament onlyActive:(BOOL)onlyActive;
 
 /**
+ * List all tournamnts, without any filter.
+ */
+- (NSArray *)listAllTournaments;
+
+/**
  * Get tournament for specified ID.
  */
 - (SRTournament *)tournamentForId:(int)tournamentId;
