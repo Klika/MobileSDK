@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'SRSDK'
-  s.version = “1.4”
+  s.version = '1.4'
   s.summary = 'SportRadar SDK.'
   s.license = {"type"=>"Sportradar", "file"=>"LICENSE.txt"}
   s.authors = {"Jure Zemljic"=>"j.zemljic@sportradar.com"}
