@@ -6,6 +6,7 @@ Pod::Spec.new do |s|
   s.authors = {"Jure Zemljic"=>"j.zemljic@sportradar.com"}
   s.homepage = 'https://developer.sportradar.com'
   s.requires_arc = true
+  s.framework = "SystemConfiguration","MobileCoreServices"
   s.source = { :git => "https://github.com/Klika/MobileSDK.git", :tag => s.version.to_s}
 
   s.platform = :ios, '7.0'
